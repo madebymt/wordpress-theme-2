@@ -9,13 +9,15 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="div-block-55">
+  <div class="w-row">
+    <main class="column-7 w-col w-col-8">
+  
 
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
+			get_template_part( 'template-parts/content', 'single' );
 
 			the_post_navigation();
 
@@ -28,7 +30,13 @@ get_header(); ?>
 		?>
 
 		</main><!-- #main -->
+		
+		<!-- sidebar -->
+		<div class="column-8 w-col w-col-4">
+		<?php get_sidebar();?>
+		</div >
 	</div><!-- #primary -->
+</div><!-- div-block-55 -!>
 
 <?php
 get_sidebar();

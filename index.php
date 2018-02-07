@@ -15,19 +15,19 @@
  $image =
 get_header();
 ?>
-
-<?php if (is_home() && get_option('page_for_posts') ) { //check for the feature image
+<?php
+if (is_home() && get_option('page_for_posts') && wp_get_attachment_image_src(get_post_thumbnail_id(get_option('page_for_posts')),'full') ) { //check for the feature image
 	$img = wp_get_attachment_image_src(get_post_thumbnail_id(get_option('page_for_posts')),'full');
 	$blog_page_image = $img[0]; ?>
 		<div class="div-block-21" style="background:URL('<?echo $blog_page_image;?>') no-repeat; background-size:cover; background-attachment: fixed;">
 			<h1 class="heading-12">Blog Post </h1>
 		</div>
-<?php } else { ?>
+<?php } else {?>
 	<div class="div-block-21" style="background:URL('<?php/ bloginfo('template_directory');?>assets/images/food-salad-restaurant-person.jpg')'; background-size:cover; background-attachment:fixed;">
 		<h1 class="heading-12">Blog Post</h1>
 	</div>
-<?php };?>
 
+	<?php } ?>
 
 <div class="div-block-55">
 	<div class="w-row">

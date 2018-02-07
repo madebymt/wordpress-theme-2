@@ -779,6 +779,7 @@ li .page_item a {
   text-decoration: none;
   color: #eb6c54;
   margin-right: 20px;
+  font-size:14px;
 }
 
 a {
@@ -792,10 +793,20 @@ ul, li {
   text-align: center;
 }
 
-.navbar {
+.navbar{
   display: flex;
   justify-content: center;
+  background:white;
 }
+
+.container{
+  background:white;
+}
+
+.w-nav-menu{
+  font-size:14px;
+}
+
 
 /*------------------menu ul,ol item style ---------------------*/
 
@@ -1527,6 +1538,7 @@ ul, li {
   color: #b3a9a9;
   letter-spacing: 1px;
   text-decoration: none;
+  font-size: 12px;
 }
 
 .link-2 {
@@ -1535,6 +1547,7 @@ ul, li {
   color: #b3a9a9;
   letter-spacing: 1px;
   text-decoration: none;
+  font-size: 12px;
 }
 
 .link-2.font-awesome {
@@ -1547,10 +1560,13 @@ ul, li {
   color: #b3a9a9;
   letter-spacing: 0.5px;
   text-decoration: none;
+  font-size: 12px;
 }
 
 .link-3.font-awesome {
   font-family: 'Fontawesome webfont', sans-serif;
+  font-size: 12px;
+  margin: 10px;
 }
 
 .link-4 {
@@ -1559,6 +1575,39 @@ ul, li {
   color: #b3a9a9;
   letter-spacing: 1px;
   text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.entry-title a:visited {
+  color: rgba(221, 117, 91, .78);
+}
+
+.fa-pencil {
+  margin-right: 5px;
+  font-family: 'Fontawesome webfont', sans-serif;
+  color: #b3a9a9;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.post-edit-link {
+  margin-right: 5px;
+  font-family: 'Fontawesome webfont', sans-serif;
+  color: #b3a9a9;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.entry-title {
+  text-transform: uppercase;
+}
+
+.a:visited {
+  color: rgba(221, 117, 91, .78);
 }
 
 .div-block-24 {
@@ -1585,6 +1634,7 @@ ul, li {
   font-family: Montserrat, sans-serif;
   color: #b3a9a9;
   text-decoration: none;
+  font-size: 12px;
 }
 
 .link-6 {
@@ -1593,6 +1643,7 @@ ul, li {
   font-family: 'Fontawesome webfont', sans-serif;
   color: #8d8a8a;
   text-decoration: none;
+  font-size: 12px;
 }
 
 .link-6.read-more {
@@ -2600,6 +2651,26 @@ p {
 
 /* widget style */
 
-.div-block-26 {
+/*.div-block-26 {
   float: left;
+}*/
+
+.entry-title {
+  font-family: Montserrat, sans-serif;
+  color: rgba(221, 117, 91, 0.78);
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.div-block-24 {
+  display: flex;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: "Fontawesome webfont", sans-serif;
 }
