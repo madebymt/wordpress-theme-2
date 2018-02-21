@@ -650,6 +650,59 @@ a:hover, a:active {
   display: block;
 }
 
+#comments footer {
+  background: none;
+  color: inherit;
+}
+
+#comments footer a {
+  color: inherit;
+}
+
+#comments .comment-metadata {
+  margin: 10px 0 0;
+}
+
+#comments .footer-meta {
+  float: left;
+}
+
+.div-block-35 {
+  float: left;
+  width: 100%;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  text-align: left;
+}
+
+img.avatar {
+  border-radius: 50%;
+}
+
+/*--------------------------------------------------------------
+# Side-bar
+--------------------------------------------------------------*/
+
+.widget-area ul {
+  display: block;
+}
+
+.widget-title {
+  text-align: left;
+  padding-left: 10%;
+  color: grey;
+}
+
+.widget-area li {
+  text-align: left;
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -779,7 +832,7 @@ li .page_item a {
   text-decoration: none;
   color: #eb6c54;
   margin-right: 20px;
-  font-size:14px;
+  font-size: 14px;
 }
 
 a {
@@ -793,20 +846,19 @@ ul, li {
   text-align: center;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: center;
-  background:white;
+  background: white;
 }
 
-.container{
-  background:white;
+.container {
+  background: white;
 }
 
-.w-nav-menu{
-  font-size:14px;
+.w-nav-menu {
+  font-size: 14px;
 }
-
 
 /*------------------menu ul,ol item style ---------------------*/
 

@@ -64,7 +64,7 @@
 	 <div id="page" class="site">
 		 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'new-theme' ); ?></a>
 		 <div class="div-block-18">
-			 <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+			 <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav" style="background:white;">
 				 <div class="container w-container">
 								<?php if( has_custom_logo() ) {
 									echo the_custom_logo();

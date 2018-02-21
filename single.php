@@ -12,7 +12,7 @@ get_header(); ?>
 <div class="div-block-55">
   <div class="w-row">
     <main class="column-7 w-col w-col-8">
-  
+
 
 		<?php
 		while ( have_posts() ) : the_post();
@@ -30,14 +30,12 @@ get_header(); ?>
 		?>
 
 		</main><!-- #main -->
-		
+
 		<!-- sidebar -->
 		<div class="column-8 w-col w-col-4">
 		<?php get_sidebar();?>
-		</div >
+		</div>
 	</div><!-- #primary -->
-</div><!-- div-block-55 -!>
+</div>
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer();?>
