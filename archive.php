@@ -8,9 +8,16 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="div-block-21">
+    <h1 class="heading-12"><?php single_cat_title(); ?></h1>
+	<?php 
+the_archive_description( '<div class="taxonomy-description">', '</div>' ); 
+?>
+</div>
+			
+	<div class="div-block-54">
+	<div id="primary" class="content-area w-row">
+		<main id="main" class="site-main column-7 w-col w-col-8">
 
 		<?php
 		if ( have_posts() ) : ?>
@@ -42,10 +49,17 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
 		</main><!-- #main -->
+		<div class="column-8 w-col w-col-4">
+        <div class="div-block-26">
+          <div class="div-block-31">
+		<?php get_sidebar(); ?>
+	    </div>
+	  </div>
+	</div>
 	</div><!-- #primary -->
+</div>
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

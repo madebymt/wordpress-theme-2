@@ -48,7 +48,6 @@
 	<div class="div-block-25">
 		<a href="#" class="link-6"></a>
 		<a href="<?php comments_link();?>" class="link-6"><?php comments_number(0,1,'%');?></a>
-		
 	</div>
 
 	<!-- <?php theme_test2_post_thumbnail(); ?>
