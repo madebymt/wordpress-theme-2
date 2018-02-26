@@ -14,45 +14,37 @@
 	</div><!-- #content -->
 
 	<div class="div-block-13">
-  <div class="w-row">
-    <div class="column-4 w-col w-col-4">
+	  <div class="w-row">
+	    <div class="column-4 w-col w-col-4 col-md-4">
+				 <?php if( has_custom_logo() ) {
+					 echo the_custom_logo();
+				 } else { ?>
+					<h1><a href="<?php echo esc_url (home_url('/')); ?>"> <?php bloginfo('name'); ?> </a></h1>
+				<?php } ?>
+				<p class="paragraph-8">&copy; <?php echo Date('Y') ?> - <?php bloginfo('name');?></p>
+	   </div>
 
-      <div class="div-block-14">
+	 <div class="w-col w-col-8 col-md-8">
+			<!-- <nav role="navigation" class="w-nav-menu col-md-8"> -->
+				<?php
+				wp_nav_menu( array(
+						'theme_location'    => 'footer',
+						'depth'             => 2,
+						'container'         => 'div',
+						// 'container_class'   => 'collapse navbar-collapse',
+						'container_id'      => 'bs-example-navbar-collapse-1',
+						'menu_class'        => 'nav navbar-nav col-md-8',
+						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'            => new WP_Bootstrap_Navwalker(),
+				) );
+				?>
+			<!-- </nav> -->
+			<div class="menu-button w-nav-button">
+				<div class="w-icon-nav-menu"></div>
+			</div>
+		</div>
 
 
-		 </div>
-		 <?php if( has_custom_logo() ) {
-			 echo the_custom_logo();
-		 } else { ?>
-			<h1><a href="<?php echo esc_url (home_url('/')); ?>"> <?php bloginfo('name'); ?> </a></h1>
-		<?php } ?>
-		<p class="paragraph-8">&copy; <?php echo Date('Y') ?> - <?php bloginfo('name');?></p>
-    </div>
-    <div class="w-col w-col-4">
-      <h1 class="heading-9">PRODUCT</h1>
-				<p class="paragraph-9">
-					<a href="#">T-SHIRT</a>
-					<br>
-					<a href="#">DRESS</a>
-					<br>
-					<a href="#">BAG</a>
-					<br>
-					<a href="#">OTHER</a>
-				</P>
-    </div>
-    <div class="w-col w-col-4">
-      <h1 class="heading-9">PRIVACY</h1>
-      <a>
-				<p class="paragraph-9">
-					<a href="#">ABOUT</a>
-					<br>
-					<a href="#">CONTACT</a>
-					<br>
-					<a href="#">SUPPORT</a>
-					<br>
-					<a href="#">HOUR</a>
-				</P>
-    </div>
   </div>
 </div>
 

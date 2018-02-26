@@ -9,15 +9,18 @@
 
 get_header(); ?>
 <div class="div-block-21">
+  <div class="archive">
     <h1 class="heading-12"><?php single_cat_title(); ?></h1>
-	<?php 
-the_archive_description( '<div class="taxonomy-description">', '</div>' ); 
-?>
+    <?php
+    the_archive_description( '<div class="taxonomy-description">', '</div>' );
+    ?>
+  </div>
+
 </div>
-			
+
 	<div class="div-block-54">
-	<div id="primary" class="content-area w-row">
-		<main id="main" class="site-main column-7 w-col w-col-8">
+	  <div id="primary" class="content-area w-row">
+		  <main id="main" class="site-main column-7 w-col w-col-8">
 
 		<?php
 		if ( have_posts() ) : ?>
@@ -53,11 +56,11 @@ the_archive_description( '<div class="taxonomy-description">', '</div>' );
 		<div class="column-8 w-col w-col-4">
         <div class="div-block-26">
           <div class="div-block-31">
-		<?php get_sidebar(); ?>
-	    </div>
+		        <?php get_sidebar(); ?>
+	        </div>
+	      </div>
 	  </div>
-	</div>
-	</div><!-- #primary -->
+</div><!-- #primary -->
 </div>
 
 <?php

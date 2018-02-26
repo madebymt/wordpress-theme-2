@@ -430,6 +430,10 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 
+.navbar-nav>li.current_page_item a, .navbar-nav>li.current_page_parents a {
+  border-bottom: 4px solid #ad6060;
+}
+
 .main-navigation {
   clear: both;
   display: block;
@@ -1403,9 +1407,7 @@ ul, li {
   font-family: Montserrat, sans-serif;
 }
 
-button, 
-input[type="button"], 
-input[type="reset"], input[type="submit"] {
+button, input[type="button"], input[type="reset"], input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -1414,7 +1416,8 @@ input[type="reset"], input[type="submit"] {
   /* font-size: 12px; */
   font-size: 0.75rem;
   line-height: 1;
-  padding: .8em 8em .8em;
+  /*padding: .8em 8em .8em;*/
+  padding: 2em;
 }
 
 .heading-11 {
@@ -1514,6 +1517,16 @@ input[type="reset"], input[type="submit"] {
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.archive {
+  display: block;
+  text-align: center;
+}
+
+.taxonomy-description>p {
+  color: white;
+  font-family: sans-serif;
 }
 
 .div-block-21.resource {
@@ -2739,4 +2752,60 @@ p {
   -webkit-box-align: center;
   align-items: center;
   font-family: "Fontawesome webfont", sans-serif;
+}
+
+/*search page styling*/
+
+.search {
+  display: block;
+}
+
+.page-title {
+  color: white;
+  font-family: sans-serif;
+}
+
+.no-results {
+  padding: 5em;
+}
+
+.page-title {
+  font-family: sans-serif;
+}
+
+/*blog page main container*/
+
+.div-block-55 {
+  padding: 3em;
+}
+
+.site-main {
+  padding-right: 5em;
+  padding-left: 8em;
+}
+
+/*footer logo*/
+
+.div-block-13>.w-row>.column-4 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph-8 {
+  width: 100%;
+}
+
+/*contact page form*/
+
+.wpcf7-submit, .submit-button-3 {
+  width: 40%;
+  padding: 3em;
+  font-size: 15px;
+}
+
+.w-form>.input[type="submit"] {
+  padding: 5em !important;
 }

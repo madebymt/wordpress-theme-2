@@ -9,18 +9,19 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="div-block-21">
+	<h1 class="page-title"><?php
+		/* translators: %s: search query. */
+		printf( esc_html__( 'Search Results for: %s', 'theme-test2' ), '<span>' . get_search_query() . '</span>' );
+	?></h1>
+</div>
+
+<div class="div-block-54">
+	<div id="primary" class="content-area w-row">
+		<main id="main" class="site-main column-7 w-col w-col-8">
 
 		<?php
 		if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'theme-test2' ), '<span>' . get_search_query() . '</span>' );
-				?></h1>
-			</header><!-- .page-header -->
 
 			<?php
 			/* Start the Loop */
@@ -44,8 +45,17 @@ get_header(); ?>
 		endif; ?>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
+		<div class="column-8 w-col w-col-4">
+				<div class="div-block-26">
+					<div class="div-block-31">
+						<?php get_sidebar(); ?>
+					</div>
+				</div>
+		</div>
+
+
+	</div>
+</div>
 
 <?php
-get_sidebar();
 get_footer();
