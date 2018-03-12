@@ -1,10 +1,10 @@
 <?php
 $button_text = get_field('button_text');
 $button_content = get_field('button_content');
-
+$product_url = get_field('product_url');
 ?>
 
-<div class="div-block-12">
+<div class="div-block-12" data-aos="fade-up" data-aos-delay="50">
 <h1 class="heading-3 popular-post">RECENT POST</h1>
 <div class="div-block-11 div-center"></div>
 <div>
@@ -27,7 +27,8 @@ $button_content = get_field('button_content');
         'class' =>'image-3'
 
       ));?>
-        <h1 class="heading-4"><?php the_title();?></h1> </a>
+        <h1 class="heading-4"><?php the_title();?></h1>
+      </a>
         <p class="paragraph-3"><?php the_excerpt(); ?> </p>
 
       </div>

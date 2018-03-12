@@ -238,10 +238,14 @@ body, button, input, select, optgroup, textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  color: grey;
+  font-family: Montserrat, sans-serif;
 }
 
 p {
   margin-bottom: 1.5em;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 dfn, cite, em, i {
@@ -411,7 +415,7 @@ a {
 }
 
 a:visited {
-  color: purple;
+  color: #777;
 }
 
 a:hover, a:focus, a:active {
@@ -694,6 +698,7 @@ img.avatar {
 
 .widget-area ul {
   display: block;
+  text-align: left;
 }
 
 .widget-title {
@@ -825,11 +830,15 @@ embed, iframe, object {
 my stylesheet
 ------------------------------------------------------*/
 
+span {
+  margin-right: 2em;
+}
+
 /*menu*/
 
 ul, li {
   font-family: Montserrat, sans-serif;
-  color: #eb6c54;
+  color: #777;
 }
 
 li .page_item a {
@@ -841,13 +850,27 @@ li .page_item a {
 
 a {
   text-decoration: none;
-  color: #eb6c54;
+  color: #777;
+  /*font-size: 14px;*/
+  margin: 0.3em;
+  font-family: Montserrat, sans-serif;
 }
 
-ul, li {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+a:hover {
+  background: none;
+}
+
+.link {
+  font-family: Montserrat, sans-serif;
+  color: #777;
+}
+
+.entry-title a:hover {
+  background: none;
+}
+
+.entry_title a {
+  font-size: 4em;
 }
 
 .navbar {
@@ -2692,18 +2715,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   font-style: normal;
 }
 
-/*.image-3 {
-  -webkit-transform: translateX(0) translateY(152PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0);
-  -moz-transform: translateX(0) translateY(152PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0);
-  -ms-transform: translateX(0) translateY(152PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0);
-  transform: translateX(0) translateY(152PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0);
-}*/
-
-.image-3:scroll {
-  transform: translate(350px, 0);
-  /*-webkit-transform: translate(350px, 0);*/
-}
-
 p {
   font-family: sans-serif;
   font-size: 14px;
@@ -2762,7 +2773,7 @@ p {
 
 .page-title {
   color: white;
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .no-results {
@@ -2770,7 +2781,7 @@ p {
 }
 
 .page-title {
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 /*blog page main container*/
@@ -2806,6 +2817,265 @@ p {
   font-size: 15px;
 }
 
-.w-form>.input[type="submit"] {
-  padding: 5em !important;
+.w-form>input[type="submit"] {
+  padding: 2em !important;
+}
+
+.w-form>input[type="textarea"] {
+  padding: 0px;
+}
+
+input[type="submit"] {
+  box-shadow: none;
+  border: none;
+}
+
+.w-icon-nav-menu, .w-container {
+  z-index: 5;
+}
+
+.wpcf7-form-control-wrap, .your-message {
+  padding: 0px;
+}
+
+.wpcf7-textarea {
+  padding: 0px;
+  font-family: font-family: Montserrat, sans-serif;
+}
+
+input::placeholder, .wpcf7-textarea::placeholder {
+  color: lightgrey;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+
+/*custom navbar style*/
+
+.navbar-wrapper {
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+#menu-menu-1 {
+  margin-top: 2em;
+}
+
+.navbar-toggle {
+  border: none;
+  padding-top: 20px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fac4b7;
+  border: none;
+}
+
+.nav>li:hover {
+  background: #c98c80;
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background: rgba(221, 117, 91, 0.78);
+  border-bottom: none;
+}
+
+/*drop down toggle style*/
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  color: #fff;
+  background-color: #ad6060;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  color: white;
+  background: #ad6060;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background: none;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border: none;
+}
+
+/*comment block*/
+
+.div-block-35 {
+  background: rgba(255, 228, 219, .43);
+}
+
+#reply-title {
+  color: grey;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+.column-2:nth-child(3) {
+  border-right: none;
+}
+
+.custom-logo-link:hover {
+  background: none;
+}
+
+/*home page post paragraph*/
+
+/*home sign up section*/
+
+.div-block-7>p {
+  width: 80%;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.div-block-17>.container {
+  width: 100%;
+  color: white;
+}
+
+.signup, .lead {
+  color: white;
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+}
+
+.div-block-17>.container>.row {
+  background: none;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0em;
+}
+
+.btn-success, .btn-success:hover, .btn-success:focus {
+  background: #ad6060;
+  border: none;
+  font-family: Montserrat, sans-serif;
+  width: 10em;
+}
+
+@media screen and (max-width: 699px) and (min-width: 320px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .slider {
+    height: 50vh;
+    min-height: 50vh;
+  }
+  .w-slider-mask {
+    height: 50vh;
+    min-height: 50vh;
+  }
+  .navbar-wrapper {
+    padding-left: 0em;
+    padding-right: 2em;
+  }
+  .div-block-24 {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .div-block-17>.container>.row {
+    background: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .btn-success, .btn-success:hover .btn-success:focus {
+    background: #ad6060;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    width: 10em;
+    margin-top: 1em;
+  }
+}
+
+/*Woocommerce custome styling */
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  background: rgba(221, 117, 91, 0.78);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.woocommerce div.product form.cart .button:hover {
+  background: rgba(221, 117, 91, 0.75);
+}
+
+.woocommerce div.product .product_title {
+  text-align: left;
+  font-size: 2.5em;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce ul.products li.product .price {
+  color: #777;
+  font-family: Montserrat, sans-serif;
+}
+
+.woocommerce span.onsale {
+  background: #D8582D;
+  min-width: 3.5em;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: rgba(221, 117, 91, 0.78);
+}
+
+h2, h3 {
+  color: grey;
+  font-size: 17px;
+  font-family: Montserrat, sans-serif;
+}
+
+a:hover {
+  background-color: none;
+}
+
+.woocommerce-tabs>ul, li a:hover {
+  background: none;
+}
+
+.woocommerce-message {
+  border-top-color: #ad6060c9;
+}
+
+.woocommerce-message::before {
+  content: '\e015';
+  color: #ad6060
+}
+
+.checkout-button .button.alt .wc-forward {
+  background-color: black;
+}
+
+.woocommerce-cart .wc-proceed-to-checkout a.button.alt:hover {
+  background: rgba(221, 117, 91, 0.78);
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order:hover {
+  background: rgba(221, 117, 91, 0.78);
+}
+
+/*shopping cart number*/
+
+.cart-customlocation {
+  float: right;
+  margin-top: -2em;
+  font-family: Montserrat, sans-serif;
+}
+
+.added_to_cart:hover {
+  color: grey;
 }

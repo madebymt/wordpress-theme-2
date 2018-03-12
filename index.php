@@ -62,12 +62,12 @@ if (is_home() && get_option('page_for_posts') && wp_get_attachment_image_src(get
 
 			</div>
 		</div>
-		<div class="column-8 w-col w-col-4">
-        <div class="div-block-26">
+    <div class="column-8 w-col w-col-4">
+        <!-- <div class="div-block-28"> -->
           <div class="div-block-31">
-		<?php get_sidebar(); ?>
+		        <?php get_sidebar(); ?>
 	    </div>
-	  </div>
+	  <!-- </div> -->
 	</div>
 
 	</div>
@@ -75,6 +75,6 @@ if (is_home() && get_option('page_for_posts') && wp_get_attachment_image_src(get
 
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
 ?>

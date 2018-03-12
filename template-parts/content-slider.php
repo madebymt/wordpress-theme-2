@@ -5,9 +5,22 @@ $slider1 = get_field('slider1');
 $slider2 = get_field('slider2');
 $slider3 = get_field('slider3');
 $size = 'full';
+
+$slider1_head=get_field('slider1_head');
+$slider2_head=get_field('slider2_head');
+$slider3_head=get_field('slider3_head');
+
+
+$slider1_content=get_field('slider1_content');
+$slider2_content=get_field('slider2_content');
+$slider3_content=get_field('slider3_content');
+
+
+
+
 ?>
 
-<div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
+<div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider" style="height:40vh;">
   <div class="w-slider-mask">
     <?php $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), array(1500, 7000), false, ''); ?>
     <div class="slide w-slide";>
@@ -23,9 +36,8 @@ $size = 'full';
       background-size: cover, auto;">
       <div class="div-block slider-wrapper">
         <div class="div-block-2">
-          <h1 class="heading">Deslicious</h1>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-            cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          <h1 class="heading"><?php echo $slider2_head;?></h1>
+          <p class="paragraph"><?php echo $slider2_content;?></p>
         </div>
       </div>
     </div>
@@ -33,9 +45,8 @@ $size = 'full';
       background-size: cover, auto;">
       <div class="div-block slider-wrapper">
         <div class="div-block-2">
-          <h1 class="heading">Desert time</h1>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo
-            cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          <h1 class="heading"><?php echo $slider3_head;?></h1>
+          <p class="paragraph"><?php echo $slider3_content;?></p>
         </div>
       </div>
     </div>

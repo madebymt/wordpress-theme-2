@@ -1,5 +1,5 @@
-<?php
-/* Template name: Resource page */
+_<?php
+/* Template name: woocommerce page */
 
 // get feature image from the page
 $thumbnail_url = wp_get_attachment_url(get_post_thumbnail_id($post -> ID));
@@ -20,7 +20,7 @@ get_header();
         <h1 class="heading-12"><?php the_title();?></h1>
       </div>
     </div>
-    
+
 
 <!-- // resource content section // -->
     <div class="resource-content">

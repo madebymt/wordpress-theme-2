@@ -6,20 +6,16 @@
  *   Webflow.push(readyFunction);
  */
 
- $( document ).ready(function() {
-  //  $(".image-3").hide();
-   $(".image-3").fadeOut('fast');
-   $('.div-block-10').hover(function(){
-     $(".image-3").fadeIn('200');
- });
-});
 
-// $( "#target" ).scroll(function() {
-//   $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
-// });
+
+$('#myModal').on('shown.bs.modal', function() {
+  $('#myInput').focus()
+})
 
 var $ = jQuery;
-var Webflow = { w: Webflow };
+var Webflow = {
+  w: Webflow
+};
 window.Webflow = Webflow;
 var define = Webflow.define;
 
@@ -2146,7 +2142,7 @@ var define = Webflow.define;
           }
           e = this.endHex || this.begin + this.change, this.value = e + this.unit, this.update.call(this.context, this.value), this.complete.call(this.context), this.destroy()
         }, e.format = function(t, e) {
-          if (e += "", "#" == (t += "").charAt(0)) return this.startRGB = i(e), this.endRGB = i(t), this.endHex = t, this.begin = 0, void(this.change = 1);
+          if (e += "", "#" == (t += "").charAt(0)) rerthis.startRGB = i(e), this.endRGB = i(t), this.endHex = t, this.begin = 0, void(this.change = 1);
           if (!this.unit) {
             var n = e.replace(h, "");
             n !== t.replace(h, "") && function(t, e, n) {

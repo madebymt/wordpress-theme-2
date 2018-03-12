@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-s
+
 <?php get_template_part('template-parts/content','slider');?>
 <?php get_template_part('template-parts/content','signup');?>
 <?php get_template_part('template-parts/content','about');?>

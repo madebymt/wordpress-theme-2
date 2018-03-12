@@ -55,6 +55,7 @@ if ( post_password_required() ) {
 					'short_ping' => true,
 				) );
 			?>
+			<a href="<?php $author = get_comment_author_url_link( $linktext, $before, $after ); ?>">comment</a>
 		</ol><!-- .comment-list -->
 
 		<?php the_comments_navigation();

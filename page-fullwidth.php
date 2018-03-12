@@ -3,8 +3,15 @@
 */
 
 $thumbnail_url= wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+$sign_up_title = get_field('sign_up_title');
+$sign_up_intro = get_field('sign_up_intro');
+$sign_up_form = get_field('sign_up_form');
+$button_text_top = get_field('button_text_top');
+
 
 get_header();
+
+
 ?>
 
 <?php if(has_post_thumbnail()) {?>
@@ -26,27 +33,12 @@ get_header();
    <?php endwhile;?>
  </div>
 </div>
+</div>
 
-<div class="div-block-16">
-  <h1 class="heading-11">JOIN ME WITH ALL THE GOODIES</h1>
-  <div>
-    <div class="w-form">
-      <form id="email-form" name="email-form" data-name="Email Form" class="form-2">
-      <label for="name-2" class="field-label">Name:</label>
-      <input type="text" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" id="name-2" required="">
-      <label for="email-2" class="field-label-2">Email:</label>
-      <input type="text" class="text-field-2 w-input" maxlength="256" name="email-2" data-name="Email 2" id="email-2" required="">
-      <input type="submit" value="SIGN UP" data-wait="Please wait..." class="submit-button w-button">
-      </form>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+<!-- <?php wp_reset_postdata(); ?>
+<?php wp_reset_query();?> -->
+
+<?php
+get_template_part('template-parts/content','signup');?>
 
 <?php get_footer();?>

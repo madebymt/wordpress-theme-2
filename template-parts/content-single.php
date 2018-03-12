@@ -1,6 +1,6 @@
 <?php
 /**
- * @package 
+ * @package
  */
 ?>
 
@@ -10,7 +10,7 @@
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title"> <a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
@@ -40,6 +40,6 @@
 	 </div>
  <?php }?>
    <div>
-    <p class="paragraph-11"><?php the_content();?></p>
+	    <p class="paragraph-11"><?php the_content();?></p>
    </div>
 </article><!-- #post-## -->
