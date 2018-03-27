@@ -33,12 +33,9 @@ get_header(); ?>
 
 		<!-- sidebar -->
 		<div class="column-8 w-col w-col-4">
-        <div class="div-block-26">
-          <div class="div-block-31">
+        
 		<?php get_sidebar(); ?>
-	    </div>
-	  </div>
-	</div>
+	  
 	</div><!-- #primary -->
 </div>
 

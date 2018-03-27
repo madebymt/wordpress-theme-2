@@ -42,4 +42,5 @@
    <div>
 	    <p class="paragraph-11"><?php the_content();?></p>
    </div>
+   
 </article><!-- #post-## -->

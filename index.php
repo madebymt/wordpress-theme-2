@@ -15,6 +15,7 @@
  $image =
 get_header();
 ?>
+
 <?php
 if (is_home() && get_option('page_for_posts') && wp_get_attachment_image_src(get_post_thumbnail_id(get_option('page_for_posts')),'full') ) { //check for the feature image
 	$img = wp_get_attachment_image_src(get_post_thumbnail_id(get_option('page_for_posts')),'full');
@@ -63,18 +64,14 @@ if (is_home() && get_option('page_for_posts') && wp_get_attachment_image_src(get
 			</div>
 		</div>
     <div class="column-8 w-col w-col-4">
-        <!-- <div class="div-block-28"> -->
-          <div class="div-block-31">
-		        <?php get_sidebar(); ?>
-	    </div>
-	  <!-- </div> -->
+        
+		  <?php if(is_active_sidebar('sidebar-1')):?>
+		      <?php get_sidebar(); ?>
+
+		  <?php endif;?>
 	</div>
 
-	</div>
+</div>
 </div>
 
-
-<?php
-// get_sidebar();
-get_footer();
-?>
+<?php get_footer();?>

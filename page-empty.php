@@ -24,6 +24,8 @@
 <?php } ?>
 
 
+
+
 <!-- Empty page  No Side bar-->
 
 <?php get_footer();?>

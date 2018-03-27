@@ -20,7 +20,7 @@ get_header(); ?>
 		<main id="main" class="site-main column-7 w-col w-col-8">
 				<div class="error-404 not-found">
 					<div class="page-content">
-						<h2 class="lead">Don't worry! Check this out</h2>
+						<h2 class="lead">OOOPS! Something went wrong! Check this out</h2>
 							<p class="lead">Perhaps your were looking for this....?</p>
 							<div class="div-block-37 resource">
 
@@ -45,37 +45,11 @@ get_header(); ?>
 									<?php endwhile  ;
 									wp_reset_query();?>
 								</div>
-
-								<!-- show categories -->
-								<h3 class="lead">Categories</h3>
-								<div class="widget widget_cateforeies">
-									<ul>
-									<p>....or maybe a Popular category?</p>
-									 <?php wp_list_categories(array(
-											'orderby' => 'count',
-											'order'   => 'DESC',
-											'show_count' => 1,
-											'title_li' => '',
-											'number'   => 10
-										))?>
-									</ul>
-								</div>
-
-								<!-- <h3 class="lead">Archieves</h3> -->
-								<?php the_widget('WP_Widget_Archives','title=Our Archives','before_title=<h4 class="lead">&after_title</h4>'); ?>
-                <div class="">
-									<p class="lead"> Or Just head back to the <a href="<?php echo esc_url(home_url('/'))?>">Home Page</a></p>
-
-                </div>
-						</div>
-					</div>
 				</main>
 						<div class="column-8 w-col w-col-4">
-						  <div class="div-block-26">
-								<div class="div-block-31">
+						  
 									 <?php get_sidebar(); ?>
-								</div>
-							</div>
+					
 						</div>
 		</div>
 	</div><!-- #primary -->
